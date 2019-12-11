@@ -13,6 +13,8 @@
 		3763E0D123A148260072CD97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3763E0CF23A148260072CD97 /* Main.storyboard */; };
 		3763E0D323A1482A0072CD97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3763E0D223A1482A0072CD97 /* Assets.xcassets */; };
 		3763E0D623A1482A0072CD97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3763E0D423A1482A0072CD97 /* LaunchScreen.storyboard */; };
+		3763E0DE23A148930072CD97 /* Technique.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3763E0DD23A148930072CD97 /* Technique.plist */; };
+		3763E0E023A149A40072CD97 /* Technique.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3763E0DF23A149A40072CD97 /* Technique.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3763E0D223A1482A0072CD97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3763E0D523A1482A0072CD97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3763E0D723A1482A0072CD97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3763E0DD23A148930072CD97 /* Technique.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Technique.plist; sourceTree = "<group>"; };
+		3763E0DF23A149A40072CD97 /* Technique.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Technique.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				3763E0D223A1482A0072CD97 /* Assets.xcassets */,
 				3763E0D423A1482A0072CD97 /* LaunchScreen.storyboard */,
 				3763E0D723A1482A0072CD97 /* Info.plist */,
+				3763E0DD23A148930072CD97 /* Technique.plist */,
+				3763E0DF23A149A40072CD97 /* Technique.metal */,
 			);
 			path = "SCNTechnique+Animation";
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 				3763E0D623A1482A0072CD97 /* LaunchScreen.storyboard in Resources */,
 				3763E0D323A1482A0072CD97 /* Assets.xcassets in Resources */,
 				3763E0D123A148260072CD97 /* Main.storyboard in Resources */,
+				3763E0DE23A148930072CD97 /* Technique.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,7 @@
 			files = (
 				3763E0CE23A148260072CD97 /* ViewController.swift in Sources */,
 				3763E0CA23A148260072CD97 /* AppDelegate.swift in Sources */,
+				3763E0E023A149A40072CD97 /* Technique.metal in Sources */,
 				3763E0CC23A148260072CD97 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,7 +24,8 @@ class ViewController: UIViewController {
             scnView.leftAnchor.constraint(equalTo: view.leftAnchor),
         ])
     }
-    lazy var technique: SCNTechnique = {
+    
+    let technique: SCNTechnique = {
         if let path = Bundle.main.path(forResource: "Technique", ofType: "plist"),
             let dict = NSDictionary(contentsOfFile: path) as? [String : Any] {
             return SCNTechnique(dictionary: dict)!
@@ -33,7 +34,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        scnView.allowsCameraControl = true
+        
+        // setup Scene
         scnView.scene = SCNScene()
         scnView.scene?.background.contents = UIColor.green
         let boxNode = SCNNode(geometry: SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0))
@@ -50,10 +52,10 @@ class ViewController: UIViewController {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("didTap")
         
-        // set value
+        // set value これは上手くいく
         //scnView.technique!.setObject(NSNumber(floatLiteral: 0.1), forKeyedSubscript: NSString(string: "valueSymbol"))
         
-        // animation
+        // animation これは上手くいかない
         scnView.technique!.removeAllAnimations()
         let animation = CABasicAnimation(keyPath: "valueSymbol")
         animation.fromValue   = NSNumber(floatLiteral: 0.0)
